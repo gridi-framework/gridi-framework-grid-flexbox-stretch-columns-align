@@ -1,0 +1,16 @@
+.grid-flexbox.grid-stretch-#{$grid-column-class-prefix}s {
+    &.#{$grid-column-class-prefix}s-vertical-align-start .#{$grid-column-class-prefix},
+    .#{$grid-column-class-prefix}s-vertical-align-start .#{$grid-column-class-prefix} {
+        @include justify-content(flex-start);
+    }
+
+    &.#{$grid-column-class-prefix}s-vertical-align-center .#{$grid-column-class-prefix},
+    .#{$grid-column-class-prefix}s-vertical-align-center .#{$grid-column-class-prefix} {
+        @include justify-content(center);
+    }
+
+    &.#{$grid-column-class-prefix}s-vertical-align-end .#{$grid-column-class-prefix},
+    .#{$grid-column-class-prefix}s-vertical-align-end .#{$grid-column-class-prefix} {
+        @include justify-content(flex-end);
+    }
+}
